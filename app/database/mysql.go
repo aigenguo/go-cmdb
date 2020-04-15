@@ -12,7 +12,7 @@ import (
 
 var DB *gorm.DB
 
-func init() {
+func InitDB() {
 	var err error
 	// 连接串
 	var conStr = fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",

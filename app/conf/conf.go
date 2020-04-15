@@ -42,8 +42,17 @@ func InitConf() {
 		log.Fatalf("读取 'config.yaml' 失败: %v\n", err)
 	}
 	// 	配置内容解析
-	viper.ReadConfig(bytes.NewBuffer(data))
+	err = viper.ReadConfig(bytes.NewBuffer(data))
+	if err != nil {
+		log.Fatalf("解析 'config.yaml' 失败: %v\n", err)
+	}
 	// 解析配置赋值
-	viper.UnmarshalKey("server", ServerConf)
-	viper.UnmarshalKey("database", DBConf)
+	err = viper.UnmarshalKey("server", ServerConf)
+	if err != nil {
+		log.Fatalf("解析 'server配置' 失败: %v\n", err)
+	}
+	err = viper.UnmarshalKey("database", DBConf)
+	if err != nil {
+		log.Fatalf("解析 'database' 失败: %v\n", err)
+	}
 }

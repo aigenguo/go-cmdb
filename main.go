@@ -9,9 +9,11 @@ import (
 )
 
 func main() {
-	//	基本配置初始化
+	// 初始化配置
 	conf.InitConf()
+	// 初始化数据库连接
+	orm.InitDB()
 	defer orm.DB.Close()
 	router := router2.InitRouter()
-	router.Run(fmt.Sprintf(":%d", conf.ServerConf.Port))
+	router.Run(fmt.Sprintf("%s:%s", conf.ServerConf.IP, conf.ServerConf.Port))
 }
