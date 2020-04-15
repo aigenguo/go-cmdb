@@ -50,14 +50,14 @@ func (asset *Asset) Assets(pageNum, pageSize int, condition string) (assets []As
 			// 支持模糊查询
 			result = DB.Offset((pageNum-1)*pageSize).Limit(pageSize).Where("hostname like ?", "%"+condition+"%").Or(
 				"ip like ?", "%"+condition+"%").Or("host like ?", "%"+condition+"%").Or(
-				"os like ?", ""+condition+"%").Or("oip like ?", "%"+condition+"%").Or(
+				"os like ?", ""+condition+"%").Or("o_ip like ?", "%"+condition+"%").Or(
 				"cpu like ?", "%"+condition+"%").Or("mem like ?", "%"+condition+"%").Or(
 				"disk like ?", "%"+condition+"%").Or("bandwidth like ?", "%"+condition+"%").Or(
 				"use_of like ?", "%"+condition+"%").Or("principal like ?", "%"+condition+"%").Find(&assets)
 		} else {
 			result = DB.Offset(pageNum).Limit(pageSize).Where("hostname like ?", "%"+condition+"%").Or(
 				"ip like ?", "%"+condition+"%").Or("host like ?", "%"+condition+"%").Or(
-				"os like ?", ""+condition+"%").Or("oip like ?", "%"+condition+"%").Or(
+				"os like ?", ""+condition+"%").Or("o_ip like ?", "%"+condition+"%").Or(
 				"cpu like ?", "%"+condition+"%").Or("mem like ?", "%"+condition+"%").Or(
 				"disk like ?", "%"+condition+"%").Or("bandwidth like ?", "%"+condition+"%").Or(
 				"use_of like ?", "%"+condition+"%").Or("principal like ?", "%"+condition+"%").Find(&assets)
