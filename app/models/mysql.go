@@ -53,5 +53,5 @@ func InitDB() {
 	// 	添加唯一索引
 	DB.Model(&Asset{}).AddUniqueIndex("uk_hostname", "hostname")
 	DB.Model(&Asset{}).AddUniqueIndex("uk_ip", "ip")
-	DB.Model(&Asset{}).AddUniqueIndex("uk_oip", "oip")
+	DB.Model(&Asset{}).AddUniqueIndex("uk_oip", "o_ip")
 }
