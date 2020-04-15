@@ -1,4 +1,4 @@
-package database
+package models
 
 import (
 	"fmt"
@@ -46,8 +46,12 @@ func InitDB() {
 	DB.DB().SetMaxIdleConns(10)
 	DB.DB().SetMaxOpenConns(10)
 	// migrate 迁移
-	// DB.Set(
-	// 	"gorm:table_options",
-	// 	"ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
-	// ).AutoMigrate()
+	DB.Set(
+		"gorm:table_options",
+		"ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+	).AutoMigrate(&Asset{})
+	// 	添加唯一索引
+	DB.Model(&Asset{}).AddUniqueIndex("uk_hostname", "hostname")
+	DB.Model(&Asset{}).AddUniqueIndex("uk_ip", "ip")
+	DB.Model(&Asset{}).AddUniqueIndex("uk_oip", "oip")
 }
