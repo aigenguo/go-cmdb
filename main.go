@@ -5,7 +5,7 @@ import (
 
 	"go-cmdb/app/conf"
 	"go-cmdb/app/models"
-	router2 "go-cmdb/app/router"
+	"go-cmdb/app/router/v1"
 )
 
 func main() {
@@ -14,6 +14,6 @@ func main() {
 	// 初始化数据库连接
 	models.InitDB()
 	defer models.DB.Close()
-	router := router2.InitRouter()
+	router := v1.InitRouter()
 	router.Run(fmt.Sprintf("%s:%s", conf.ServerConf.IP, conf.ServerConf.Port))
 }

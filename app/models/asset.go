@@ -63,7 +63,8 @@ func (asset *Asset) Assets(pageNum, pageSize int, condition string) (assets []As
 				"use_of like ?", "%"+condition+"%").Or("principal like ?", "%"+condition+"%").Find(&assets)
 		}
 	}
-	DB.Table("tb_assets").Count(&count)
+	// gorm并不是真正删除而是更新deleted_at字段对应的时间
+	DB.Table("tb_assets").Where("deleted_at is null").Count(&count)
 	err = result.Error
 	if err != nil && err != gorm.ErrRecordNotFound {
 		return
