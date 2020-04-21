@@ -10,7 +10,7 @@ database:
   port: 3306
   dbName: go_cmdb
   tablePrefix: tb_
-  debug: true
+  debug: false
 email:
   username: xxx
   password: ""
@@ -19,3 +19,6 @@ email:
     - xxx.xxx.com
   senderEmail: xxx.com
   subject: "go-cmdb"
+log:
+  level: 5  # debug
+  output: "logs/app.log"

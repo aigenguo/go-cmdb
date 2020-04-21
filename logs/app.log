@@ -1,0 +1,69 @@
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:25:27" level=info msg="| 200 |    2.686105ms |       127.0.0.1 | GET | /v1/assets?pageSize=10 |  |"
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:29:01" level=info client_ip=127.0.0.1 latency_time=2.547058ms req_body= req_method=GET req_uri="/v1/assets?pageSize=10" status_code=200
+time="2020-04-21 17:30:10" level=info client_ip=127.0.0.1 latency_time=13.560948ms req_body= req_method=PUT req_uri=/v1/assets/3 status_code=200
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:36:43" level=info client_ip=127.0.0.1 latency_time=15.761613ms req_body= req_method=GET req_uri="/v1/assets?pageSize=10" status_code=200
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:44:17" level=info client_ip=127.0.0.1 latency_time=1.816664ms req_body="map[bandwidth:[10000] cpu:[4] disk:[300] host:[dx-banma-dps-01] hostname:[dx-banma-dps-srv-prod-16] ip:[10.16.11.35] mem:[8] oip:[112.112.132.157] os:[CentOS Linux release 7.4.1708] principal:[guoyingbo] use_of:[配送dps srv]]" req_method=POST req_uri=/v1/assets status_code=200
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:45:59" level=info client_ip=127.0.0.1 latency_time=2.687441ms req_body="map[]" req_method=GET req_uri="/v1/assets?pageSize=10" status_code=200
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:46:57" level=info client_ip=127.0.0.1 latency_time=4.09895ms req_body="map[]" req_method=GET req_uri="/v1/assets?pageSize=10" status_code=200
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:48:30" level=info client_ip=127.0.0.1 latency_time=8.386968ms req_body="map[]" req_method=GET req_uri="/v1/assets?pageSize=10" status_code=200
+[GIN-debug] GET    /v1/assets                --> go-cmdb/app/apis.Assets (4 handlers)
+[GIN-debug] POST   /v1/assets                --> go-cmdb/app/apis.Store (4 handlers)
+[GIN-debug] PUT    /v1/assets/:id            --> go-cmdb/app/apis.Update (4 handlers)
+[GIN-debug] DELETE /v1/assets/:id            --> go-cmdb/app/apis.Destroy (4 handlers)
+[GIN-debug] Listening and serving HTTP on 0.0.0.0:1323
+time="2020-04-21 17:50:11" level=info client_ip=127.0.0.1 latency_time=3.678444ms req_body="map[]" req_method=GET req_uri="/v1/assets?pageSize=10" status_code=200

@@ -33,6 +33,15 @@ type database struct {
 // database 实例化
 var DBConf = &database{}
 
+// 日志 配置
+type logger struct {
+	Level  string `mapstructure: "level"`
+	Output string `mapstructure: "output"`
+}
+
+// logger 实例化
+var LogConf = &logger{}
+
 // 生成服务配置
 func InitConf() {
 	viper.SetConfigType("YAML")
@@ -54,5 +63,9 @@ func InitConf() {
 	err = viper.UnmarshalKey("database", DBConf)
 	if err != nil {
 		log.Fatalf("解析 'database' 失败: %v\n", err)
+	}
+	err = viper.UnmarshalKey("log", LogConf)
+	if err != nil {
+		log.Fatalf("解析 'log' 失败: %v\n", err)
 	}
 }
